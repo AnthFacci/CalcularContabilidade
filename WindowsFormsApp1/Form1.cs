@@ -54,13 +54,8 @@ namespace WindowsFormsApp1
             emp.CalcularSb();
 
             baseEsc.Text = emp.TotalSb.ToString(); 
-
-           
-            emp.ValorIr();
-            
+       
             irEsc.Text = emp.TotalIr.ToString(); 
-
-            emp.CalcularSl();   
 
             liqEsc.Text = emp.TotalSl.ToString();
             

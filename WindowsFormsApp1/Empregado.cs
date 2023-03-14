@@ -25,9 +25,13 @@ namespace WindowsFormsApp1
         public void CalcularSb()
         {
             TotalSb = (DiasTrab * ValorDiaria);
+
+            ValorIr();
+
+            CalcularSl();
         }
 
-        public void ValorIr()
+        private  void ValorIr()
         {
             if (TotalSb <= 1903.98)
             {
@@ -52,7 +56,7 @@ namespace WindowsFormsApp1
             
         }
 
-        public void CalcularSl()
+        private  void CalcularSl()
         {
             TotalSl = (TotalSb - TotalIr); 
         }
